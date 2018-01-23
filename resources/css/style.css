@@ -10,7 +10,7 @@ body {
 
 #high-light {
     font-weight: bold;
-    color: #969696;
+    color: #646464;
 }
 
 /* Header Content */
@@ -18,7 +18,10 @@ body {
     display: flex;
     align-items: center;
     height: 4rem;
-    margin: 0  1rem 0 1.5rem;
+    padding: 0  1rem 0 1.5rem;
+    position: fixed;
+    background-color: #fff;
+    width: 97%;
 }
 
 .logo {
@@ -26,8 +29,6 @@ body {
     flex: 1;
     align-items: center;
     color: #c9c9c9;
-    /* margin-left: 1.5rem; */
-    /* height: 2rem; */
 }
 
 .logo h1 {
@@ -40,4 +41,56 @@ nav ul {
 
 ul li {
     margin: 0 0.5rem;
+}
+
+/* Banner Section */
+.container {
+    background-color: #d4d4d4;
+    padding-top: 4rem;
+    width: 100%;
+}
+
+.main-banner-content {
+    display: flex;
+    align-items: center;
+}
+
+.main-banner-content img {
+    width: 60%;
+    margin: 2rem 1.5rem;
+}
+
+.banner-info {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    line-height: 2.5rem;
+    margin-left: 1.5rem;
+    color: #646464;
+}
+
+.banner-info h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.banner-info p {
+    font-weight: bold;
+}
+
+.banner-info span {
+    text-align: center;
+}
+
+.banner-info h1,
+.banner-info p,
+.banner-info span {
+    margin: 1.5rem 0;
+}
+
+.button {
+    background-color: #646464;
+    color: #fff;
+    padding: 0.5rem 5rem;
 }
