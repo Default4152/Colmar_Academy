@@ -8,6 +8,10 @@ body {
     line-height: 1.5rem;
 }
 
+section:nth-child(odd) {
+    background-color: #d4d4d4;
+}
+
 #high-light {
     font-weight: bold;
     color: #646464;
@@ -165,3 +169,39 @@ ul li {
 .topic:last-child {
     background-color: #d4d4d4;
 }
+
+/* Online Section */
+.online-heading {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.online-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+figure {
+    margin: 2rem 1rem;
+    width: 25%;
+    background-color: #fff;
+}
+
+figcaption {
+    margin: 1rem;
+}
+figcaption h1 {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+/* Thesis Section */
