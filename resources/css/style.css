@@ -140,6 +140,7 @@ ul li {
     }
     .mobile-nav-bar {
         display: flex;
+        margin: auto;
     }
     .mobile-nav-bar ul li {
         margin: 0.5rem 2rem;
