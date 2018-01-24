@@ -90,6 +90,7 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
+    .main-content-info img,
     .main-info,
     .main-topics {
         display: none;
@@ -197,6 +198,7 @@ ul li {
     background-color: #646464;
     color: #fff;
     padding: 0.5rem 5rem;
+    width: 72%;
 }
 
 @media only screen and (max-width: 480px) {
