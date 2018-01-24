@@ -5,12 +5,16 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.4rem;
+    line-height: 1.5rem;
 }
 
 #high-light {
     font-weight: bold;
     color: #646464;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Header Content */
@@ -96,20 +100,68 @@ ul li {
 }
 
 /* On Campus Content */
-.orientation {
+
+.orientation-content {
     display: flex;
 }
 
-.orientation-content {
-    /* margin: 80%; */
-}
-
-.orientation-content img {
+.orientation-content-info {
     width: 60%;
     margin: 2rem 1.5rem;
+}
+
+.orientation-info {
+    margin: 2rem 0;
+}
+
+.orientation-info h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.orientation-info p {
+    margin: 2rem 0;
+}
+
+.orientation-content-info img {
+    width: 100%;
 }
 
 .orientation-topics {
     display: flex;
     flex-direction: column;
+    align-content: stretch;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.topic {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid #d4d4d4; */
+}
+
+.topic img {
+    margin: 1rem;
+    width: 35%;
+    height: auto;
+}
+
+.topic-info {
+    width: 65%;
+}
+
+.topic-info h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.topic-info h1,
+.topic-info p,
+.topic-info a {
+    margin: 0.5rem;
+}
+
+.topic:last-child {
+    background-color: #d4d4d4;
 }
