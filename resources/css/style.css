@@ -21,6 +21,13 @@ a {
     text-decoration: none;
 }
 
+.main-section-heading {
+    font-weight: bold;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
 /* Header Content */
 .main-header {
     display: flex;
@@ -51,6 +58,23 @@ ul li {
     margin: 0 0.5rem;
 }
 
+.mobile-nav-bar {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    nav,
+    .logo {
+        display: none;
+    }
+    .mobile-nav-bar {
+        display: flex;
+    }
+    .mobile-nav-bar ul li {
+        margin: 0.5rem 2rem;
+    }
+}
+
 /* Banner Section */
 .container {
     background-color: #d4d4d4;
@@ -72,7 +96,7 @@ ul li {
     width: 350px;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-self: center;
     line-height: 2.5rem;
     margin-left: 1.5rem;
     color: #646464;
@@ -101,6 +125,16 @@ ul li {
     background-color: #646464;
     color: #fff;
     padding: 0.5rem 5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-banner-content {
+        display: block;
+    }
+    .main-banner-content img {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 /* On Campus Content */
@@ -164,18 +198,35 @@ ul li {
     margin: 0.5rem;
 }
 
-.topic:last-child {
+.orientation-topics .topic:last-child {
     background-color: #d4d4d4;
 }
 
-/* Online Section */
-.online-heading {
-    font-weight: bold;
-    font-size: 2.2rem;
-    text-align: center;
-    padding-top: 2rem;
+.mobile-orientation-topics {
+    display: none;
 }
 
+@media only screen and (max-width: 480px) {
+    .orientation-content {
+        display: none;
+    }
+    .mobile-orientation-topics {
+        display: flex;
+        flex-direction: column;
+    }
+    .topic {
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    .topic-info {
+        width: 75%;
+    }
+    .topic img {
+        width: 85%;
+    }
+}
+
+/* Online Section */
 .online-content {
     display: flex;
     justify-content: center;
@@ -202,14 +253,27 @@ figure img {
     height: auto;
 }
 
-/* Thesis Section */
-.thesis-heading {
-    font-weight: bold;
-    font-size: 2.2rem;
-    text-align: center;
-    padding-top: 2rem
+@media only screen and (max-width: 480px) {
+    figure img,
+    figcaption p {
+        display: none;
+    }
+    figure {
+        width: 90%;
+        margin: 0.5rem 1rem;;
+    }
+    figcaption {
+        padding: 1rem;
+        margin: 0;
+        background-color: #646464;
+    }
+    .online-content {
+        flex-direction: column;
+        padding: 2rem 0; 
+    }
 }
 
+/* Thesis Section */
 .thesis-content {
     display: flex;
 }
@@ -238,11 +302,26 @@ figure img {
     align-content: stretch;
     width: 40%;
     height: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
+}
+
+.thesis-topics .topic:first-child {
+    background-color: #d4d4d4;
 }
 
 .thesis-content-info video {
     width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+    .thesis-info,
+    .thesis-topics {
+        display: none;
+    }
+    .thesis-content-info {
+        width: 100%;
+        margin: 2rem 0;
+    }
 }
 
 /* Footer Content */
@@ -252,4 +331,10 @@ footer {
 
 .mobile {
     float: right;
+}
+
+@media only screen and (max-width: 480px) {
+    .mobile {
+        display: none;
+    }
 }
