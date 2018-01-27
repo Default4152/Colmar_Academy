@@ -147,7 +147,7 @@ ul li {
         margin: auto;
     }
     .mobile-nav-bar ul li {
-        margin: 0.5rem 2rem;
+        margin: 0.5rem 1.2rem;
     }
 }
 
@@ -202,6 +202,8 @@ ul li {
     color: #fff;
     padding: 0.5rem 5rem;
 }
+
+
 
 @media only screen and (max-width: 480px) {
     .main-banner-content {
@@ -273,7 +275,7 @@ figure img {
     }
     figure {
         width: 90%;
-        margin: 0.5rem 1rem;;
+        margin: 0.5rem 1rem;
     }
     figcaption {
         padding: 1rem;
@@ -292,7 +294,7 @@ figure img {
 }
 
 .main-content .thesis-topics {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 @media only screen and (max-width: 480px) {
